@@ -8,6 +8,12 @@ using System.Data.Entity;
 namespace Program_1._0._0 
 {
 	//Публичный класс оу еее
+
+	public class Git 
+	{
+	
+	}
+
     public class Company
     {
         public int Id { get; set; } //Для связи таблиц
