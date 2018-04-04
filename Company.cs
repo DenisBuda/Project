@@ -7,7 +7,7 @@ using System.Data.Entity;
 
 namespace Program_1._0._0 
 {
-	//Публичный класс
+	//Публичный класс оу еее
     public class Company
     {
         public int Id { get; set; } //Для связи таблиц
