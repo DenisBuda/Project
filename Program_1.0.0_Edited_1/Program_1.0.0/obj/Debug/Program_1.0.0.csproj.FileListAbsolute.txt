@@ -1,0 +1,37 @@
+c:\users\asus\documents\visual studio 2015\Projects\Program_1.0.0\Program_1.0.0\bin\Debug\Program_1.0.0.exe.config
+c:\users\asus\documents\visual studio 2015\Projects\Program_1.0.0\Program_1.0.0\obj\Debug\Program_1.0.0.csprojResolveAssemblyReference.cache
+c:\users\asus\documents\visual studio 2015\Projects\Program_1.0.0\Program_1.0.0\bin\Debug\Program_1.0.0.exe
+c:\users\asus\documents\visual studio 2015\Projects\Program_1.0.0\Program_1.0.0\bin\Debug\Program_1.0.0.pdb
+c:\users\asus\documents\visual studio 2015\Projects\Program_1.0.0\Program_1.0.0\obj\Debug\Program_1.0.0.exe
+c:\users\asus\documents\visual studio 2015\Projects\Program_1.0.0\Program_1.0.0\obj\Debug\Program_1.0.0.pdb
+C:\Users\Altynbek\Desktop\Program_1.0.0\Program_1.0.0\bin\Debug\Program_1.0.0.exe.config
+C:\Users\Altynbek\Desktop\Program_1.0.0\Program_1.0.0\bin\Debug\Program_1.0.0.exe
+C:\Users\Altynbek\Desktop\Program_1.0.0\Program_1.0.0\bin\Debug\Program_1.0.0.pdb
+C:\Users\Altynbek\Desktop\Program_1.0.0\Program_1.0.0\obj\Debug\Program_1.0.0.csprojResolveAssemblyReference.cache
+C:\Users\Altynbek\Desktop\Program_1.0.0\Program_1.0.0\obj\Debug\Program_1.0.0.csproj.CoreCompileInputs.cache
+C:\Users\Altynbek\Desktop\Program_1.0.0\Program_1.0.0\obj\Debug\Program_1.0.0.exe
+C:\Users\Altynbek\Desktop\Program_1.0.0\Program_1.0.0\obj\Debug\Program_1.0.0.pdb
+C:\Users\Tequila\Downloads\Program_1.0.0_Edited\Program_1.0.0_Edited\Program_1.0.0\bin\Debug\Program_1.0.0.exe.config
+C:\Users\Tequila\Downloads\Program_1.0.0_Edited\Program_1.0.0_Edited\Program_1.0.0\obj\Debug\Program_1.0.0.exe
+C:\Users\Tequila\Downloads\Program_1.0.0_Edited\Program_1.0.0_Edited\Program_1.0.0\obj\Debug\Program_1.0.0.pdb
+C:\Users\Tequila\Downloads\Program_1.0.0_Edited\Program_1.0.0_Edited\Program_1.0.0\obj\Debug\Program_1.0.0.csprojResolveAssemblyReference.cache
+C:\Users\turdubaev.ARVIEW\Desktop\Program_1.0.0_Edited\Program_1.0.0\obj\Debug\Program_1.0.0.csproj.CoreCompileInputs.cache
+C:\Users\turdubaev.ARVIEW\Desktop\Program_1.0.0_Edited\Program_1.0.0\bin\Debug\Program_1.0.0.exe.config
+C:\Users\turdubaev.ARVIEW\Desktop\Program_1.0.0_Edited\Program_1.0.0\bin\Debug\Program_1.0.0.exe
+C:\Users\turdubaev.ARVIEW\Desktop\Program_1.0.0_Edited\Program_1.0.0\bin\Debug\Program_1.0.0.pdb
+C:\Users\turdubaev.ARVIEW\Desktop\Program_1.0.0_Edited\Program_1.0.0\bin\Debug\EntityFramework.dll
+C:\Users\turdubaev.ARVIEW\Desktop\Program_1.0.0_Edited\Program_1.0.0\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\turdubaev.ARVIEW\Desktop\Program_1.0.0_Edited\Program_1.0.0\bin\Debug\EntityFramework.xml
+C:\Users\turdubaev.ARVIEW\Desktop\Program_1.0.0_Edited\Program_1.0.0\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\turdubaev.ARVIEW\Desktop\Program_1.0.0_Edited\Program_1.0.0\obj\Debug\Program_1.0.0.exe
+C:\Users\turdubaev.ARVIEW\Desktop\Program_1.0.0_Edited\Program_1.0.0\obj\Debug\Program_1.0.0.pdb
+C:\Users\asus\Documents\Visual Studio 2015\Projects\1\Program_1.0.0_Edited_1\Program_1.0.0\bin\Debug\Program_1.0.0.exe.config
+C:\Users\asus\Documents\Visual Studio 2015\Projects\1\Program_1.0.0_Edited_1\Program_1.0.0\obj\Debug\Program_1.0.0.exe
+C:\Users\asus\Documents\Visual Studio 2015\Projects\1\Program_1.0.0_Edited_1\Program_1.0.0\obj\Debug\Program_1.0.0.pdb
+C:\Users\asus\Documents\Visual Studio 2015\Projects\1\Program_1.0.0_Edited_1\Program_1.0.0\bin\Debug\Program_1.0.0.exe
+C:\Users\asus\Documents\Visual Studio 2015\Projects\1\Program_1.0.0_Edited_1\Program_1.0.0\bin\Debug\Program_1.0.0.pdb
+C:\Users\asus\Documents\Visual Studio 2015\Projects\1\Program_1.0.0_Edited_1\Program_1.0.0\bin\Debug\EntityFramework.dll
+C:\Users\asus\Documents\Visual Studio 2015\Projects\1\Program_1.0.0_Edited_1\Program_1.0.0\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\asus\Documents\Visual Studio 2015\Projects\1\Program_1.0.0_Edited_1\Program_1.0.0\bin\Debug\EntityFramework.xml
+C:\Users\asus\Documents\Visual Studio 2015\Projects\1\Program_1.0.0_Edited_1\Program_1.0.0\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\asus\Documents\Visual Studio 2015\Projects\1\Program_1.0.0_Edited_1\Program_1.0.0\obj\Debug\Program_1.0.0.csprojResolveAssemblyReference.cache
