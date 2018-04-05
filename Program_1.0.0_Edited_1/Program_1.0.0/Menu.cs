@@ -152,6 +152,7 @@ namespace Program_1._0._0 {
                 db.SaveChanges();
 
                 Console.WriteLine("Компания успешно зарегистрирована! ");
+                Console.WriteLine("Выберите дальнейшие действия ");
 
             }
 

@@ -35,3 +35,13 @@ C:\Users\asus\Documents\Visual Studio 2015\Projects\1\Program_1.0.0_Edited_1\Pro
 C:\Users\asus\Documents\Visual Studio 2015\Projects\1\Program_1.0.0_Edited_1\Program_1.0.0\bin\Debug\EntityFramework.xml
 C:\Users\asus\Documents\Visual Studio 2015\Projects\1\Program_1.0.0_Edited_1\Program_1.0.0\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\asus\Documents\Visual Studio 2015\Projects\1\Program_1.0.0_Edited_1\Program_1.0.0\obj\Debug\Program_1.0.0.csprojResolveAssemblyReference.cache
+C:\VSprojects\Program_1.0.0_Edited_1\Program_1.0.0\bin\Debug\Program_1.0.0.exe.config
+C:\VSprojects\Program_1.0.0_Edited_1\Program_1.0.0\obj\Debug\Program_1.0.0.exe
+C:\VSprojects\Program_1.0.0_Edited_1\Program_1.0.0\obj\Debug\Program_1.0.0.pdb
+C:\VSprojects\Program_1.0.0_Edited_1\Program_1.0.0\bin\Debug\Program_1.0.0.exe
+C:\VSprojects\Program_1.0.0_Edited_1\Program_1.0.0\bin\Debug\Program_1.0.0.pdb
+C:\VSprojects\Program_1.0.0_Edited_1\Program_1.0.0\bin\Debug\EntityFramework.dll
+C:\VSprojects\Program_1.0.0_Edited_1\Program_1.0.0\bin\Debug\EntityFramework.SqlServer.dll
+C:\VSprojects\Program_1.0.0_Edited_1\Program_1.0.0\bin\Debug\EntityFramework.xml
+C:\VSprojects\Program_1.0.0_Edited_1\Program_1.0.0\bin\Debug\EntityFramework.SqlServer.xml
+C:\VSprojects\Program_1.0.0_Edited_1\Program_1.0.0\obj\Debug\Program_1.0.0.csprojResolveAssemblyReference.cache
