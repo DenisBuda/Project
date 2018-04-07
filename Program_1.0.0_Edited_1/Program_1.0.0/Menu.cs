@@ -5,7 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Program_1._0._0 {
-    class Menu {
+    class Menu
+    {
         public List<Company> Companies;
         MyDbContext db = new MyDbContext();
         // конструктор класса Menu
@@ -22,23 +23,48 @@ namespace Program_1._0._0 {
             while (true)
             {
                 Console.WriteLine("\n1. Зарегистрировать компанию");
-                Console.WriteLine("2. Редактировать список сотрудников компании");
-                Console.WriteLine("3. Удалить компанию из БД");
-                Console.WriteLine("4. Вывести список зарегистрированных компаний с сотрудниками");
-                Console.WriteLine("5. Вывести список компаний отдельно");
-                Console.WriteLine("6. Зарегистрировать сотрудника");
+                Console.WriteLine("2. Зарегистрировать сотрудника"); 
+                Console.WriteLine("3. Вывести список компаний"); 
+                Console.WriteLine("4. Вывести список сотрудников"); 
+                Console.WriteLine("5. Вывести список зарегистрированных компаний с сотрудниками"); 
+                Console.WriteLine("6. Удалить компанию"); 
+
+                //Console.WriteLine("7. Редактировать список сотрудников компании"); 
+                //Console.WriteLine("8. Удалить компанию из БД");  
+                
                 Console.WriteLine("0. Выход");
                 Console.WriteLine();
 
                 Console.Write("\nВыберите действие, которое необходимо выполнить:");
 
                 string userChoise = Console.ReadLine();
-                switch (userChoise) {
+                switch (userChoise) 
+                {
                     case "1":
                         RegisterCompany();
                         break;
 
                     case "2":
+                        RegisterEmployee();
+                        break;
+
+                    case "3":
+                        DisplayOnlyCompanies();
+                        break;
+
+                    case "4":
+                        DisplayOnlyEmployee();
+                        break;
+
+                    case "5":
+                        DisplayCompanies();
+                        break;
+
+                    case "6":
+                        DeleteCompany();
+                        break;
+
+                    case "22":
                         // отображаем список имеющихся компаний для того, 
                         // чтобы пользователь мог указать в какую именно компанию трудоустроить сотрудника
                         // если ни одной компании еще не зарегистрированно, то нужно уведомить об этом пользователя 
@@ -49,7 +75,8 @@ namespace Program_1._0._0 {
                             Console.WriteLine("Зарегистрировать компанию: да, нет? ");
                             userChoise = Console.ReadLine();
 
-                            if(String.Equals(userChoise, "да", StringComparison.InvariantCulture)) {
+                            if(String.Equals(userChoise, "да", StringComparison.InvariantCulture))
+                            {
                                 RegisterCompany();
                                 break;
                             }
@@ -61,7 +88,8 @@ namespace Program_1._0._0 {
                         userChoise = Console.ReadLine();
 
                         int companyId = -1;
-                        if (int.TryParse(userChoise, out companyId) && companyId < Companies.Count) {
+                        if (int.TryParse(userChoise, out companyId) && companyId < Companies.Count)
+                        {
                             var company = Companies[companyId];
                             company.ShowEmployeeList();
 
@@ -78,14 +106,15 @@ namespace Program_1._0._0 {
                         }
                         break;
 
-
-                    case "3":
+                    case "8":
                         DisplayCompanies();
-                        if(Companies.Count <= 0) {
+                        if(Companies.Count <= 0)
+                        {
                             continue;
                         }
 
-                        while (true) {
+                        while (true)
+                        {
                             Console.Write("\nВведите номер удаляемой компании: ");
                             userChoise = Console.ReadLine();
 
@@ -101,18 +130,6 @@ namespace Program_1._0._0 {
                             Console.WriteLine("Операция успешно завершена\n");
                             break;
                         }
-                        break;
-
-                    case "4":
-                        DisplayCompanies();
-                        break;
-
-                    case "5":
-                        DisplayOnlyCompanies();
-                        break;
-
-                    case "6":
-                        RegisterEmployee();
                         break;
 
                     case "0":
@@ -134,37 +151,22 @@ namespace Program_1._0._0 {
             // создаем экземпляр класса Company 
             // и добавляем его в список компаний, зарегистрированных в нашем приложении
 
-            using (MyDbContext db = new MyDbContext())
+            using (MyDbContext context = new MyDbContext())
             {
                 Console.Write("\nВведите название компании: ");
 
                 string companyName = Console.ReadLine();
 
-                Console.Write("\nВведите Id компании: ");
+                Company company = new Company { Name = companyName};
 
-                int companyId = int.Parse(Console.ReadLine());
+                context.CompaniesDb.Add(company);
 
-                Company comp = new Company { Name = companyName, Id = companyId };
+                context.SaveChanges();
 
-
-                db.CompaniesC.Add(comp);
-
-                db.SaveChanges();
-
-                Console.WriteLine("Компания успешно зарегистрирована! ");
-                Console.WriteLine("Выберите дальнейшие действия ");
+                Console.WriteLine("\nКомпания успешно зарегистрирована! ");
+                Console.WriteLine("\nВыберите дальнейшие действия ");
 
             }
-
-            /*
-            Console.Write("\nВведите название компании: ");
-            string companyName = Console.ReadLine();
-
-            var company = new Company(companyName);
-            Companies.Add(company);
-
-            Console.WriteLine("Компания успешно зарегистрированна\n");
-            */
         }
 
         private void RegisterEmployee()
@@ -173,92 +175,109 @@ namespace Program_1._0._0 {
             // создаем экземпляр класса Company 
             // и добавляем его в список компаний, зарегистрированных в нашем приложении
 
-            using (MyDbContext db = new MyDbContext())
+            using (MyDbContext context = new MyDbContext())
             {
-                Console.Write("\nВведите id сотрудника: ");
+                while (true)
+                {
+                    Console.Write("\nВведите имя сотрудника: ");
 
-                int eId = int.Parse(Console.ReadLine());
+                    string eFirstName = Console.ReadLine();
+                    
+                    Console.Write("\nВведите фамилию сотрудника: ");
 
-                Console.Write("\nВведите имя сотрудника: ");
+                    string eLastName = Console.ReadLine();
 
-                string eFirstName = Console.ReadLine();
+                    Console.Write("\nВведите отчество сотрудника: ");
 
-                Console.Write("\nВведите фамилию сотрудника: ");
+                    string eMiddleName = Console.ReadLine();
 
-                string eLastName = Console.ReadLine();
+                    Employee employee = new Employee { FirstName = eFirstName, LastName = eLastName, MiddleName = eMiddleName, DateOfBirth = DateTime.Now };
+                    context.EmployeeDb.Add(employee);
 
-                Console.Write("\nВведите отчество сотрудника: ");
+                    Console.WriteLine("Зарегистрировать еще сотрудника? да/нет");
+                    string newEmployee = Console.ReadLine();
 
-                string eMiddleName = Console.ReadLine();
-
-                Employee emp = new Employee { FirstName = eFirstName, LastName = eLastName, MiddleName = eMiddleName, DateOfBirth = DateTime.Now, Id = eId  };
-
-
-                db.EmployeeC.Add(emp);
-
-                db.SaveChanges();
-
-                Console.WriteLine("Сотрудник успешно зарегистрирован! ");
-
+                    if (newEmployee == "нет")
+                    {
+                        context.SaveChanges();
+                        Console.WriteLine("Успех! ");
+                        break;
+                    }
+                }
             }
-
-            /*
-            Console.Write("\nВведите название компании: ");
-            string companyName = Console.ReadLine();
-
-            var company = new Company(companyName);
-            Companies.Add(company);
-
-            Console.WriteLine("Компания успешно зарегистрированна\n");
-            */
         }
 
 
         private void DisplayCompanies()
         {
-            using (MyDbContext ee = new MyDbContext())
+            using (MyDbContext context = new MyDbContext())
             {
+                var companiesDisplay = context.CompaniesDb.ToList();
 
-                var compan = ee.CompaniesC.ToList();
-
-                foreach (var cmp in compan)
+                foreach (var company in companiesDisplay)
                 {
-                    Console.WriteLine("Company name = {0}", cmp.Name);
+                    Console.WriteLine("Company name - {0}, Id - {1}", company.Name, company.Id);
 
-                    var employee = ee.EmployeeC.Where(emp => emp.Id == cmp.Id).ToList();
+                    var employeeDisplay = context.EmployeeDb.Where(empl => empl.Id == company.Id).ToList();
 
-                    foreach (var empl in employee)
+                    foreach (var employee in employeeDisplay)
                     {
-                        Console.WriteLine(empl.FirstName);
+                        Console.WriteLine("{0} {1} {2}, Id - {3}", employee.LastName, employee.FirstName,  employee.MiddleName, employee.Id);
                     }
                 }
             }
-
-
-
-            /*
-            if (Companies == null || Companies.Count == 0) {
-                Console.WriteLine("БД компаний пуста");
-                return;
-            }
-
-            for (int idx = 0; idx < Companies.Count; idx++) {
-                Console.WriteLine($"{idx}. {Companies[idx].Name} (Дата основания - ) {Companies[idx].DateOfFoundation.ToShortDateString()}");
-            }*/
         }
 
         public void DisplayOnlyCompanies()
         {
-            using (MyDbContext ee = new MyDbContext())
+            using (MyDbContext context = new MyDbContext())
             {
-                var compan = ee.CompaniesC.ToList();
+                var companyDisplay = context.CompaniesDb.ToList();
 
-                foreach (var cmp in compan)
+                foreach (var company in companyDisplay)
                 {
-                    Console.WriteLine("Company name = {0}", cmp.Name);
+                    Console.WriteLine("Company ID - {0}, Name - {1}", company.Id, company.Name);
 
                 }
             }
+        }
+
+        public void DisplayOnlyEmployee()
+        {
+            using (MyDbContext context = new MyDbContext())
+            {
+                var employeeDisplay = context.EmployeeDb.ToList();
+
+                foreach (var employee in employeeDisplay)
+                {
+                    Console.WriteLine("{0} {1} {2}, Id - {3}", employee.LastName,  employee.FirstName,  employee.MiddleName, employee.Id);
+
+                }
+            }
+        }
+
+        public void DeleteCompany()
+        {
+            MyDbContext context = new MyDbContext();
+
+            Console.WriteLine("Введите название компании: ");
+
+            var unnecessaryCompany = Console.ReadLine();
+
+            Company company = context.CompaniesDb.Where(o => o.Name == unnecessaryCompany).FirstOrDefault();
+            try
+            {
+                context.CompaniesDb.Remove(company);
+                context.SaveChanges();
+                Console.WriteLine("Компания успешно удалена!");
+            }
+
+            catch
+            {
+                Console.WriteLine("Упс! В названии компании имеется ошибка! ");
+            }
+            
+
         }
 
     }

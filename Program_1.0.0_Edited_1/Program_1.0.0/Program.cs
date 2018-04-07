@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 namespace Program_1._0._0 {
     class Program {
 
-        static void Main(string[] args) {
+        static void Main(string[] args)
+        {
             Menu mn = new Menu();
             mn.Show();
         }

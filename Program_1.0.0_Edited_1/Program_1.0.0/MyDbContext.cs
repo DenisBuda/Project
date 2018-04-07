@@ -11,7 +11,7 @@ namespace Program_1._0._0
     {
         public MyDbContext() : base("MyDbContext") { }
 
-        public DbSet<Employee> EmployeeC { get; set; }
-        public DbSet<Company> CompaniesC { get; set; }
+        public DbSet<Employee> EmployeeDb { get; set; }
+        public DbSet<Company> CompaniesDb { get; set; }
     }
 }
